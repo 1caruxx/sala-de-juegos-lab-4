@@ -1,0 +1,36 @@
+body, * {
+    overflow: hidden;
+}
+
+img.adivina {
+    width: 300px;
+    height: auto;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.interfaz {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+input {
+    width: 12vw;
+    border-radius: 0;
+    margin: 0 15px 0 0;
+}
+
+input:focus {
+    transform: none;
+}
+
+button {
+    margin: 0;
+}
+
+.background {
+    opacity: .4;
+}

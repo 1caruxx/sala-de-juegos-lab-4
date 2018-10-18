@@ -1,0 +1,10 @@
+* { overflow: hidden; }
+
+.container {
+    color: white;
+    background-color: rgba(0, 0, 0, .2) !important;
+}
+
+h1 { font-family: audiowide; }
+
+a:visited { color: #B3DCEE; }

@@ -1,0 +1,32 @@
+@font-face {
+    src: url('../../../assets/fonts/CabinSketch-Regular.ttf');
+    font-family: 'cabin sketch';
+}
+
+.container > div > span {
+    font-size: 13vw;
+    color: white;
+    font-family: 'cabin sketch';
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.cuenta {
+    display: flex;
+}
+
+input {
+    width: 13vw;
+    border-radius: 0;
+    font-family: 'cabin sketch';
+    font-size: 13vw;
+    border: none;
+    background-color: transparent;
+    color: white;
+}
+
+input:focus {
+    transform: none;
+}

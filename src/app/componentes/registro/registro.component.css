@@ -1,0 +1,6 @@
+.container {
+    color: white;
+    background-color: rgba(0, 0, 0, .4) !important;
+}
+
+h1 { font-family: audiowide; }

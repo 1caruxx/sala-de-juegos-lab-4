@@ -1,0 +1,17 @@
+<div class="grid-container">
+  <h1 class="mat-h1">Seleccioná un juego!</h1>
+  <mat-grid-list cols="2" rowHeight="350px">
+    <mat-grid-tile *ngFor="let card of cards | async" [colspan]="card.cols" [rowspan]="card.rows">
+      <mat-card class="dashboard-card"
+                matTooltipClass="tooltip-card"
+                matTooltip="{{card.mensaje}}"
+                matTooltipPosition="{{card.posicion}}"
+                (click)="Redireccionar(card.link)">
+
+        <img src="../../../assets/img/{{card.img}}" />
+        <div class="texto">{{card.texto}}</div>
+
+      </mat-card>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>

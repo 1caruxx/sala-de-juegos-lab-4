@@ -1,0 +1,27 @@
+<simple-notifications [options]="options"></simple-notifications>
+
+<div class="puntos">
+  <span>Puntos: {{puntos}}</span>
+  <span>Record: {{record}}</span>
+  <span>Tiempo restante: {{segundos}}.{{milisegundos}}</span>
+</div>
+
+<div class="container">
+
+  <!-- <div class="background">
+    <img src="../../../assets/img/palabras-bgn.jpg" />
+  </div> -->
+
+  <div class="gameover opacidad" [ngClass]="{'gameover':true,'opacidad':true,'ocultar':ocultarGameOver}">
+    <img src="../../../assets/img/game-over.jpg" />
+    <button>Volver a jugar</button>
+  </div>
+
+  <span>{{palabraAleatoria}}</span>
+
+  <div class="interfaz">
+    <input type="text" [(ngModel)]="palabraUsuario" #input autofocus />
+    <button (click)="VerficarPalabra()">Verificar</button>
+  </div>
+
+</div>

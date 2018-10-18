@@ -1,0 +1,39 @@
+@font-face {
+    src: url('../../../assets/fonts/IndieFlower.ttf');
+    font-family: 'indie flower';
+}
+
+.container {
+    background-image: url('../../../assets/img/anagrama-bgn.jpg');
+}
+
+.container > span {
+    font-family: 'indie flower';
+    font-size: 13vw;
+    color: white;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.interfaz {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+input {
+    width: 16vw;
+    border-radius: 0;
+    margin: 0 15px 0 0;
+}
+
+input:focus {
+    transform: none;
+}
+
+button {
+    margin: 0;
+    transform: none;
+}

@@ -1,0 +1,19 @@
+<simple-notifications [options]="options"></simple-notifications>
+
+<div class="background">
+    <img src="../../../assets/img/background.jpg" alt="">
+</div>
+
+<img src="../../../assets/img/spinner.gif" [ngClass]="{'spinner':true,'ocultar':ocultarSpinner}" />
+
+<div class="container opacidad">
+
+    <h1>Registro</h1>
+
+    <input type="email" placeholder="Correo electrónico" [(ngModel)]="correo" autofocus />
+    <input type="text" placeholder="Nickname" [(ngModel)]="nombre" />
+    <input type="password" placeholder="Contraseña" [(ngModel)]="password" />
+
+    <button (click)="Registrar()">Registrarse</button>
+
+</div>

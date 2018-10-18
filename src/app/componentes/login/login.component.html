@@ -1,0 +1,20 @@
+<simple-notifications [options]="options"></simple-notifications>
+
+<img src="../../../assets/img/spinner.gif" [ngClass]="{'spinner':true,'ocultar':ocultarSpinner}" />
+
+<div class="container opacidad">
+
+    <div class="background">
+        <img [src]="background" alt="">
+    </div>
+
+    <h1>Iniciar sesión</h1>
+
+    <input type="email" placeholder="Correo electrónico" [(ngModel)]="correo" autofocus />
+    <input type="password" placeholder="Contraseña" [(ngModel)]="password" />
+
+    <span>¿No tienes una cuenta? <a routerLink="/registro" routerLinkActive="active">Registrate</a></span>
+    
+    <button (click)="Logear()">Iniciar sesión</button>
+
+</div>
